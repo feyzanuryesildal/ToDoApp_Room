@@ -20,8 +20,8 @@ class MainAdapter(newsModel: newsModel) : RecyclerView.Adapter<MainViewHolder>()
     }
     override fun onBindViewHolder(holder: MainViewHolder, position: Int) {
         val news = news[position]
-        holder.binding.name.text = news.status
-        Glide.with(holder.itemView.context).load(news).into(holder.binding.imageview)
+        //holder.binding.name.text = news.status
+        //Glide.with(holder.itemView.context).load(news).into(holder.binding.imageview)
     }
     override fun getItemCount(): Int {
         return news.size
